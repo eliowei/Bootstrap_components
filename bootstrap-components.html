@@ -12,10 +12,6 @@
       height: 600px;
     }
 
-    .me-6 {
-      margin-right: 3rem;
-    }
-
     .my-6 {
       margin-top: 6rem !important;
       margin-bottom: 6rem !important;
@@ -29,7 +25,6 @@
     .card-md-width {
       width: 26rem;
     }
-
 
     iframe {
       vertical-align: middle;
@@ -48,6 +43,11 @@
 
       .card-md-width {
         width: 100%;
+      }
+
+      .col-mw-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
       }
 
       .col-mw-md-12 {
@@ -70,13 +70,6 @@
       .py-6 {
         padding-top: 0rem !important;
         padding-bottom: 0rem !important;
-      }
-    }
-
-    @media (min-wdith:768px) {
-      .my-md-6 {
-        margin-top: 6rem !important;
-        margin-bottom: 6rem !important;
       }
     }
   </style>
@@ -208,7 +201,7 @@
     </div>
   </div>
   <!-- 地圖  -->
-  <div class=" container-fluid w-100 mb-5" style=" height: 600px;">
+  <div class=" container-fluid w-100 mb-5 p-0" style=" height: 600px;">
     <iframe class="w-100 h-100"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703506716216!2d121.41694067595638!3d25.044134137882367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1733128181229!5m2!1szh-TW!2stw"
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -293,11 +286,11 @@
   <!-- Footer -->
   <div class="container-fluid bg-black d-flex justify-content-center align-items-center">
     <div class="row w-75 w-mw-md-100 justify-content-around mt-4">
-      <div class="col col-sm-6 col-md mt-3">
+      <div class="col col-mw-md-6 mt-3">
         <img class="rounded-circle" src="https://picsum.photos/200/200/?random=9" alt="footer-image"
           style="max-width: 150px;">
       </div>
-      <div class="col col-sm-6 col-md px-0">
+      <div class="col col-mw-md-6 px-0">
         <div class="card bg-black" style="width: 18rem;">
           <div class="card-body text-white">
             <h5 class="card-title">Address</h5>
@@ -306,7 +299,7 @@
           </div>
         </div>
       </div>
-      <div class="col col-sm-6 col-md px-0">
+      <div class="col col-mw-md-6 px-0">
         <div class="card bg-black" style="width: 18rem;">
           <div class="card-body text-white">
             <h5 class="card-title">Links</h5>
@@ -316,7 +309,7 @@
           </div>
         </div>
       </div>
-      <div class="col col-sm-6 col-md">
+      <div class="col col-mw-md-6">
         <div class="card bg-black" style="width: 18rem;">
           <div class="card-body text-white">
             <h5 class="card-title">Contacts</h5>
